@@ -1,0 +1,52 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#header {
+  height: 10vh;
+  width: 100%;
+  background: red;
+}
+
+#main {
+  height: 80vh;
+  width: 100%;
+  background: yellow;
+}
+
+#footer {
+  height: 10vh;
+  width: 100%;
+  background: blue;
+}
+
+#side-bar,
+#hambuger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  #side-bar {
+    /* display: block; */
+    height: 100%;
+    width: 70%;
+    background: brown;
+    position: absolute;
+  }
+
+  #hambuger-menu {
+    display: block;
+    padding: 4px 0px;
+    border-top: solid 4px;
+    width: 7%;
+    position: absolute;
+    margin: 30px 0px 0px 16px;
+  }
+
+  #line1 {
+    border-top: solid 4px;
+    border-bottom: solid 4px;
+    height: 4px;
+  }
+}
