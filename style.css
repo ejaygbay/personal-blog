@@ -6,21 +6,37 @@ body {
 #header {
   height: 10vh;
   width: 100%;
-  background: red;
+  background: #bfbfbf;
 }
 
 #main {
   height: 80vh;
   width: 100%;
-  background: yellow;
+  /* background: yellow; */
 }
 
 #footer {
   height: 10vh;
   width: 100%;
-  background: blue;
+  background: #bfbfbf;
 }
 
+#menu-items {
+  display: none;
+  margin: 40px 0px 0px 0px;
+}
+
+#menu-items > a {
+  display: block;
+  color: white;
+  font-size: 2em;
+  padding: 10px 0px 10px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-bottom: solid 2px gray;
+  margin: 0;
+}
 /* #side-bar,
 #hambuger-menu {
   display: none;
@@ -30,7 +46,7 @@ body {
   #side-bar {
     height: 100vh;
     width: 0%;
-    background: brown;
+    background: #737373;
     position: absolute;
     transition: width 0.4s;
     z-index: 1;
@@ -39,12 +55,11 @@ body {
   #side-bar2 {
     height: 100vh;
     width: 100%;
-    background: gray;
+    background: #a6a6a6;
     position: absolute;
-    /* transition: width 0.4s; */
     z-index: 0;
     display: none;
-    opacity: 0.5;
+    opacity: 0.9;
   }
 
   #hambuger-menu {

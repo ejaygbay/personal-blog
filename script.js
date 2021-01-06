@@ -7,6 +7,8 @@ const hambugerMenu = (e) => {
 
   document.getElementById("side-bar2").style = "display: block";
 
+  document.getElementById("menu-items").style = "display: block";
+
   document.getElementById("side-bar").style =
     "width: 70%;transition-timing-function: ease;";
 };
@@ -18,6 +20,8 @@ const hideSidebar = (e) => {
 
   let hambuger = setTimeout(() => {
     document.getElementById("hambuger-menu").style = "display: block";
+
+    document.getElementById("menu-items").style = "display: none";
     clearTimeout(hambuger);
   }, 200);
 };
