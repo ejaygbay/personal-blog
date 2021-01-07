@@ -49,6 +49,10 @@ body {
     z-index: 1;
   }
 
+  #header {
+    display: none;
+  }
+
   #side-bar2 {
     height: 100vh;
     width: 100%;
@@ -86,13 +90,44 @@ body {
   #blog-section,
   #gallery-section {
     background: lightblue;
-    height: inherit;
     padding-top: 6em;
     display: none;
   }
 
+  #projects-section,
+  #about-section,
+  #blog-section,
+  #gallery-section {
+    height: inherit; /* Should be removed*/
+  }
+
   #home-section {
     display: block;
+  }
+
+  #sliders {
+    height: 30vh;
+    background: green;
+    width: inherit;
+    margin-top: -14px;
+  }
+
+  #sliders > img {
+    height: 100%;
+    width: 100%;
+  }
+
+  #cards {
+    width: inherit;
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+  .cards {
+    height: 12em;
+    background: brown;
+    margin-top: 10px;
   }
 }
 
