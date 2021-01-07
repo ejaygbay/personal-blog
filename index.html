@@ -7,22 +7,43 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <!-- Sidebar section -->
     <section id="side-bar">
       <div id="menu-items">
-        <a href="#" id="item">Home</a>
-        <a href="#" id="item">Projects</a>
-        <a href="#" id="item">About</a>
-        <a href="#" id="item">Blog</a>
-        <a href="#" id="item">Gallery</a>
+        <a href="#home" id="home" onclick="selectMenu(event)">Home</a>
+        <a href="#projects" id="projects" onclick="selectMenu(event)"
+          >Projects</a
+        >
+        <a href="#about" id="about" onclick="selectMenu(event)">About</a>
+        <a href="#blog" id="blog" onclick="selectMenu(event)">Blog</a>
+        <a href="#gallery" id="gallery" onclick="selectMenu(event)">Gallery</a>
       </div>
     </section>
-    <section id="side-bar2" onclick="hideSidebar(event)"></section>
-    <section id="hambuger-menu" onclick="hambugerMenu(event)">
-      <div id="line1"></div>
-    </section>
-    <section id="header"></section>
-    <section id="main"></section>
 
+    <!-- Second sidebar section -->
+    <!-- This section will coveer the page to make the sidebar menu stand out -->
+    <section id="side-bar2" onclick="hideSidebar(event)"></section>
+
+    <!-- Hambuger menu section -->
+    <section id="hambuger">
+      <section id="hambuger-menu" onclick="hambugerMenu(event)">
+        <div id="line1"></div>
+      </section>
+    </section>
+
+    <!-- Header section -->
+    <!-- <section id="header"></section> -->
+
+    <!-- Main page section -->
+    <section id="main">
+      <section class="section-item" id="home-section">Home</section>
+      <section class="section-item" id="projects-section">Projects</section>
+      <section class="section-item" id="about-section">About</section>
+      <section class="section-item" id="blog-section">Blog</section>
+      <section class="section-item" id="gallery-section">Gallery</section>
+    </section>
+
+    <!-- Footer section -->
     <section id="footer"></section>
     <script src="./script.js"></script>
   </body>

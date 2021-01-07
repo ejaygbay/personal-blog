@@ -12,13 +12,14 @@ body {
 #main {
   height: 80vh;
   width: 100%;
-  /* background: yellow; */
 }
 
 #footer {
   height: 10vh;
   width: 100%;
   background: #bfbfbf;
+  position: fixed;
+  bottom: 0;
 }
 
 #menu-items {
@@ -37,17 +38,13 @@ body {
   border-bottom: solid 2px gray;
   margin: 0;
 }
-/* #side-bar,
-#hambuger-menu {
-  display: none;
-} */
 
 @media screen and (max-width: 480px) {
   #side-bar {
     height: 100vh;
     width: 0%;
     background: #737373;
-    position: absolute;
+    position: fixed;
     transition: width 0.4s;
     z-index: 1;
   }
@@ -56,10 +53,17 @@ body {
     height: 100vh;
     width: 100%;
     background: #a6a6a6;
-    position: absolute;
+    position: fixed;
     z-index: 0;
     display: none;
     opacity: 0.9;
+  }
+
+  #hambuger {
+    height: 10vh;
+    width: 100%;
+    background: #bfbfbf;
+    position: fixed;
   }
 
   #hambuger-menu {
@@ -67,7 +71,6 @@ body {
     padding: 4px 0px;
     border-top: solid 4px;
     width: 7%;
-    position: absolute;
     margin: 30px 0px 0px 16px;
   }
 
@@ -76,4 +79,27 @@ body {
     border-bottom: solid 4px;
     height: 4px;
   }
+
+  #home-section,
+  #projects-section,
+  #about-section,
+  #blog-section,
+  #gallery-section {
+    background: lightblue;
+    height: inherit;
+    padding-top: 6em;
+    display: none;
+  }
+
+  #home-section {
+    display: block;
+  }
+}
+
+#main > .hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
 }
