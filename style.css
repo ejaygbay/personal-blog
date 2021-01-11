@@ -89,7 +89,7 @@ body {
   #about-section,
   #blog-section,
   #gallery-section {
-    background: lightblue;
+    background: whitesmoke;
     padding-top: 6em;
     display: none;
     padding-bottom: 100px;
@@ -153,10 +153,6 @@ body {
   }
 
   /* Project page style */
-  /* #projects-section {
-    font-size: 2em;
-    padding: 0px 30px;
-  } */
 
   /* About page style */
   #about-section p {
@@ -169,6 +165,16 @@ body {
     font-size: 2.5em;
     padding: 0px 0px 0px 30px;
     margin: 0;
+  }
+
+  /* Blog page style */
+  .my-blogs {
+    padding: 30px;
+    font-size: 1.5em;
+  }
+  .my-blogs li {
+    margin-top: 20px;
+    list-style-type: circle;
   }
 
   /* Gallery style */
