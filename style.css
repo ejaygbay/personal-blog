@@ -95,7 +95,6 @@ body {
     padding-bottom: 100px;
   }
 
-  #projects-section,
   #blog-section {
     height: inherit; /* Should be removed*/
   }
@@ -117,17 +116,47 @@ body {
     width: 100%;
   }
 
-  #cards {
+  .card {
     width: inherit;
     display: grid;
-    grid-template-columns: 90%;
+    grid-template-columns: 86%;
     justify-content: center;
   }
-  .cards {
+  .card-item {
     height: 12em;
     background: brown;
     margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-rows: 18% 64% 18%;
   }
+
+  .card-header {
+    background: aqua;
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding: 3px;
+  }
+
+  .card-body {
+    background-color: azure;
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding: 0px 4px;
+  }
+
+  .card-footer {
+    background: aquamarine;
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding: 3px;
+  }
+
+  /* Project page style */
+  /* #projects-section {
+    font-size: 2em;
+    padding: 0px 30px;
+  } */
 
   /* About page style */
   #about-section p {
